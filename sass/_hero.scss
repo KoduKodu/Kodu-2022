@@ -1,0 +1,17 @@
+.hero{
+    &__description {
+        @include fontTitles(500, 3rem, var(--main-dark-text-color));
+        line-height: 3.8rem;
+        white-space: pre-line;
+        margin: 70px 0;
+        span {
+            font-weight: 900;
+        }
+    }
+    &__image {
+        img {
+            width: 500px;
+            margin-bottom: -260px;
+        }
+    }
+}

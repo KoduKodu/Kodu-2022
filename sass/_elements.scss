@@ -1,0 +1,18 @@
+// pink rounded button
+.button {
+    @include fontText(400, 1.2rem, var(--white));
+    background-color: var(--pink);
+    border-radius: 65px;
+    border-style: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    width: 220px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: baseline;
+  }

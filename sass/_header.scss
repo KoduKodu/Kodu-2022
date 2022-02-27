@@ -3,7 +3,7 @@
     // left side of header - logo
     &__logo {
         &__title {
-            @include fontTitles(400, 2.25rem, var(--main-dark-text-color));
+            @include fontTitles(400, 1.8rem, var(--main-dark-text-color));
             span{
                 font-weight: 500;
             }
@@ -14,7 +14,7 @@
         &__item {
             margin-left: 117px;
             a {
-                @include fontText(300, 1.375rem, var(--main-dark-text-color));
+                @include fontText(300, 1rem, var(--main-dark-text-color));
             }
         }
     }
