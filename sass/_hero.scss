@@ -1,4 +1,6 @@
 .hero{
+    margin-bottom: 200px;
+    // hero section description
     &__description {
         @include fontTitles(500, 3rem, var(--main-dark-text-color));
         line-height: 3.8rem;
@@ -8,10 +10,11 @@
             font-weight: 900;
         }
     }
+    // hero image animated gif
     &__image {
         img {
             width: 500px;
-            margin-bottom: -260px;
+            margin-top: 400px;
         }
     }
 }
