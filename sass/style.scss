@@ -1,102 +1,32 @@
-/*!
-Theme Name: kodu-2022
-Theme URI: http://underscores.me/
-Author: Radek Skotnicki
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: kodu-2022
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-kodu-2022 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
-
---------------------------------------------------------------*/
-
-// Import variables and mixins.
-@import "abstracts/abstracts";
-
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
-
-/* Normalize
+/* Reset css
 --------------------------------------------- */
-@import "generic/normalize";
+@import "reset";
 
-/* Box sizing
+/* Imports
 --------------------------------------------- */
-@import "generic/box-sizing";
+@import "imports";
 
 /*--------------------------------------------------------------
-# Base
+# Breakpoints
 --------------------------------------------------------------*/
-@import "base/base";
+@import "breakpoints";
 
 /*--------------------------------------------------------------
-# Layouts
+# Colors
 --------------------------------------------------------------*/
-// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
-// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+@import "colors";
 
 /*--------------------------------------------------------------
-# Components
+# Variables font mixins
 --------------------------------------------------------------*/
-@import "components/components";
+@import "variables";
 
 /*--------------------------------------------------------------
-# Plugins
+# Global flexbox, margins, paddings
 --------------------------------------------------------------*/
-
-/* Jetpack infinite scroll
---------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
+@import "globals";
 
 /*--------------------------------------------------------------
-# Utilities
+# Styles
 --------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-@import "utilities/accessibility";
-
-/* Alignments
---------------------------------------------- */
-@import "utilities/alignments";
+@import "header";

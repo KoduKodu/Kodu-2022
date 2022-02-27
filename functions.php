@@ -155,7 +155,7 @@ add_action( 'wp_enqueue_scripts', 'kodu_2022_scripts' );
 function enqueue_custom_fonts() {
 	if(!is_admin()) {
 		wp_register_style('noto_sans', 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-		wp_register_style('raleway', 'https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;900&display=swap');
+		wp_register_style('raleway', 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap');
 		wp_enqueue_style('noto_sans');
 		wp_enqueue_style('raleway');
 	}

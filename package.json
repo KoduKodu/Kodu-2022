@@ -8,13 +8,10 @@
     "WordPress",
     "Theme"
   ],
-  "homepage": "https://github.com/Automattic/_s#readme",
+  "homepage": "https://github.com/KoduKodu/Kodu-2022",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Automattic/_s.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Automattic/_s/issues"
+    "url": "git+https://github.com/KoduKodu/Kodu-2022"
   },
   "devDependencies": {
     "@wordpress/scripts": "^19.2.2",
