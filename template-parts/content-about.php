@@ -8,7 +8,7 @@
  */
 
 ?>
-<!-- hero section -->
+<!-- about section -->
 <section class="about main-padding flex flex-jc-sb">
     <ul class="about__services flex">
         <li>
@@ -20,7 +20,7 @@
         <li>
             <h4 class="about__services__header">instagram</h4>
             <p class="about__services__description">
-            Klimatyczne zdjęcia produktów o małym rozmiarze, ale dużym potencjale na Twój instagram.
+            Klimatyczne zdjęcia produktów o małym rozmiarze, ale dużym potencjale, na Twój instagram.
             </p>
         </li>
     </ul>
@@ -29,8 +29,8 @@
     <p class="about__info__description">
     Internetowe wizytówki dla firm, usług, produktów lub idei. Przez nieszablonowe podejście do tworzenia stron internetowych, efekty mojej pracy oddają charakter prowadzonej przez Ciebie działalności. Uważam, że prostota i minimalizm do klucz do efektywnej identyfikacji Twojej marki.
     </p>
-    <a href="" class="flex">
-        dowiedz się więcej ->
+    <a href="" class="flex arrow-after">
+        dowiedz się więcej
     </a>
 </div>
 

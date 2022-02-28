@@ -174,6 +174,37 @@ a {
 	font-weight: 500;
 	font-size: 2.2rem;
 	color: var(--main-dark-text-color);
+	position: relative;
+	z-index: 9;
+}
+
+.section-header::after {
+	position: absolute;
+	z-index: -1;
+	content: '';
+	height: 18px;
+	top: 32px;
+	left: 40px;
+	width: 148px;
+	background: url(images/section-header-pink-underline.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.arrow-after {
+	position: relative;
+}
+
+.arrow-after::after {
+	position: relative;
+	content: '';
+	height: 12px;
+	width: 32px;
+	top: 5px;
+	left: 10px;
+	background: url(images/pink-arrow.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 /*--------------------------------------------------------------
@@ -228,6 +259,10 @@ a {
 	margin-top: 400px;
 }
 
+.about {
+	margin-bottom: 100px;
+}
+
 .about__services li {
 	margin-top: 50px;
 	padding-right: 38px;
@@ -270,6 +305,7 @@ a {
 	font-weight: 400;
 	font-size: 1.2rem;
 	color: var(--main-dark-text-color);
+	margin-top: 10px;
 }
 
 .about__info a {

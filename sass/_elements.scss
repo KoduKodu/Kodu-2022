@@ -20,5 +20,34 @@
 //section main header
   .section-header {
       @include fontTitles(500, 2.2rem, var(--main-dark-text-color));
+      position: relative;
+      z-index: 9;
+      &::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        height: 18px;
+        top: 32px;
+        left: 40px;
+        width: 148px;
+        background: url(images/section-header-pink-underline.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+  }
 
+  //pink arrow after link
+  .arrow-after {
+    position: relative;
+    &::after {
+      position: relative;
+      content: '';
+      height: 12px;
+      width: 32px;
+      top: 5px;
+      left: 10px;
+      background: url(images/pink-arrow.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }

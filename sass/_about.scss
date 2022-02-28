@@ -1,5 +1,6 @@
 .about {
     // services styling
+    margin-bottom: 100px;
     &__services {
         li {
             margin-top: 50px;
@@ -30,6 +31,7 @@
         max-width: 50%;
         &__description {
             @include fontText(400, 1.2rem, var(--main-dark-text-color));
+            margin-top: 10px;
         }
         a {
             @include fontText(400, .8rem, var(--main-dark-text-color));
