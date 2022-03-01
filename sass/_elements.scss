@@ -41,6 +41,7 @@
     position: relative;
     &::after {
       position: relative;
+      display: inline-block;
       content: '';
       height: 12px;
       width: 32px;
