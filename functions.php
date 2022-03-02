@@ -189,4 +189,10 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+/**
+ * removes extra p tag in excerpt
+ */
+remove_filter ('the_excerpt', 'wpautop');
+remove_filter ('the_content', 'wpautop');
+
 

@@ -8,22 +8,45 @@
             .portfolio__single {
                 margin-top: 100px;
                 &__image {
+                    height: 390px;
+                    width: 380px;
                     max-width: 380px;
+                    background-position: center center!important;
+                    background-size: cover!important;
+                    background-repeat: no-repeat!important;
                     order: 1;
+                    image-rendering: -webkit-optimize-contrast;
                 }
                 &__about {
+                    flex-direction: column;
                     margin: 60px 0 0 40px;
-                    padding: 0 140px 0 0; 
+                    padding: 0 140px 0 0;
+                    max-width: 44%; 
                     order: 2;
                     &__title {
                         @include fontTitles(500, 1.8rem, var(--main-dark-text-color));
                     }
                     &__desc {
+                        flex-direction: column;
                         @include fontText(500, 1rem, var(--main-dark-text-color));
                     }
-                    &__link {
+                    // class from wordpress 'read more' link
+                    .more-link {
                         @include fontText(400, .8rem, var(--main-dark-text-color));
+                        position: relative;
                         margin-top: 20px;
+                        &::after {
+                            position: relative;
+                            display: inline-block;
+                            content: '';
+                            height: 12px;
+                            width: 32px;
+                            top: 3px;
+                            left: 10px;
+                            background: url(images/pink-arrow.svg);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                          }
                     }
                 }
             }
