@@ -11,6 +11,11 @@
 
 ?>
 
+<footer>
+    <p class="footer__info flex flex-jc-c">
+        kodukodu 2022
+    </p>
+</footer>
 
 <?php wp_footer(); ?>
 

@@ -1,0 +1,7 @@
+footer {
+    background: var(--dark-gray);
+    .footer__info {
+        @include fontTitles(400, 1.6rem, var(--white));
+        padding: 40px 0;
+    }
+}
