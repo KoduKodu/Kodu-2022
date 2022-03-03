@@ -402,4 +402,122 @@ img {
 	order: 1;
 }
 
+.contact__first {
+	margin-top: 120px;
+}
+
+.contact__first__image {
+	margin-top: 90px;
+}
+
+.contact__first__image img {
+	height: 400px;
+}
+
+.contact__first__info {
+	width: 50%;
+}
+
+.contact__first__info__text {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: var(--main-dark-text-color);
+	margin-top: 10px;
+}
+
+.contact__first__info__text .arrow-after::after {
+	top: 0px;
+}
+
+.contact__first__info__email {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	color: var(--main-dark-text-color);
+	line-height: 2rem;
+	margin-top: 40px;
+}
+
+.contact__first__info img {
+	height: 80px;
+	margin: 20px 0 0 200px;
+}
+
+.contact__second {
+	margin-top: 100px;
+}
+
+.contact__second__form__header {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: var(--main-dark-text-color);
+	margin-bottom: 40px;
+}
+
+.contact__second__form p {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: var(--main-dark-text-color);
+	margin-top: 10px;
+}
+
+.contact__second__form p:last-child {
+	display: flex;
+	justify-content: center;
+	border: 2px solid green;
+}
+
+.contact__second__form input[type="text"],
+.contact__second__form input[type="email"] {
+	border: 0;
+	border-bottom: 2px solid var(--dark-gray);
+	width: 400px;
+	height: 32px;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: var(--main-dark-text-color);
+}
+
+.contact__second__form input[type="text"]:focus,
+.contact__second__form input[type="email"]:focus {
+	outline: 0;
+	border-bottom: 2px solid var(--pink);
+}
+
+.contact__second__form textarea {
+	border: 2px solid var(--dark-gray);
+	width: 400px;
+	margin-bottom: 40px;
+}
+
+.contact__second__form textarea:focus {
+	outline: 0;
+	border: 2px solid var(--pink);
+}
+
+.contact__second__form input[type="submit"] {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: var(--white);
+	background-color: var(--pink);
+	border-radius: 65px;
+	border-style: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 44px;
+	width: 200px;
+	list-style: none;
+	margin: 0;
+	outline: none;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: baseline;
+}
+
 /*# sourceMappingURL=style.css.map */
