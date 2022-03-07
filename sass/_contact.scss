@@ -65,6 +65,7 @@
                 border: 2px solid var(--dark-gray);
                 width: 400px;
                 margin-bottom: 40px;
+                @include fontText(400, 1.2rem, var(--main-dark-text-color));
                 &:focus {
                     outline: 0;
                     border: 2px solid var(--pink);
@@ -86,6 +87,10 @@
                 text-align: center;
                 text-transform: uppercase;
                 vertical-align: baseline;
+                transition: all ease-in-out .3s;
+                &:hover {
+                  background-color: var(--light-pink);
+                }
             }
         }
     }

@@ -10,7 +10,7 @@
 ?>
 <!-- contact section -->
 
-<section class="contact main-padding">
+<section class="contact main-padding" id="contact">
     <div class="contact__first flex flex-jc-sb">
         <div class="contact__first__image">
             <img src="<?php echo get_template_directory_uri(); ?>/images/cat-gif.gif" alt="">
@@ -21,7 +21,7 @@
             </h2>
             <p class="contact__first__info__text">
                 Chcesz o coś zapytać? Użyj formularza lub napisz maila, a jeśli wiesz dokładnie czego potrzebujesz i chcesz uzyskać wycenę poświęć troche czasu i
-                <a class="arrow-after" href="">wypełnij brief</a>
+                <a class="arrow-after" href="https://kodukodu.com/formularz/">wypełnij brief</a>
             </p>
             <p class="contact__first__info__email">
                 kontakt@<br>kodukodu.com

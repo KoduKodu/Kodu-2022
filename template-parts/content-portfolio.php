@@ -11,7 +11,7 @@
 
 <!-- portoflio section -->
 
-<section class="portfolio main-padding">
+<section class="portfolio main-padding" id="portfolio">
     <h2 class="section-header">portfolio</h2>
     <ul>
         <?php

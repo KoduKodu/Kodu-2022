@@ -11,9 +11,9 @@
 
 <li>
     <div class="portfolio__single flex">
-        <div class="portfolio__single__image"
+        <a href="<?php the_permalink(); ?>" class="portfolio__single__image"
              style="background: url('<?php the_post_thumbnail_url(); ?>')">
-        </div>
+        </a>
         <div class="portfolio__single__about flex">
             <h3 class="portfolio__single__about__title">
                 <?php the_title(); ?>

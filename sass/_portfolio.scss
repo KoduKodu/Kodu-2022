@@ -16,6 +16,13 @@
                     background-repeat: no-repeat!important;
                     order: 1;
                     image-rendering: -webkit-optimize-contrast;
+                    transition: all ease-in-out .3s;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(90%);
+                    &:hover{
+                    filter: grayscale(0%);
+
+                    }
                 }
                 &__about {
                     flex-direction: column;
@@ -35,6 +42,7 @@
                         @include fontText(400, .8rem, var(--main-dark-text-color));
                         position: relative;
                         margin-top: 20px;
+                        
                         &::after {
                             position: relative;
                             display: inline-block;
@@ -46,6 +54,13 @@
                             background: url(images/pink-arrow.svg);
                             background-size: contain;
                             background-repeat: no-repeat;
+                            transition: all ease-in-out .2s;
+                        }
+                        &:hover {
+                            color: var(--pink);
+                            &::after {
+                              left: 14px;
+                            }
                           }
                     }
                 }

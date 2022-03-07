@@ -15,6 +15,10 @@
             margin-left: 117px;
             a {
                 @include fontText(300, 1rem, var(--main-dark-text-color));
+                transition: all ease-in-out .1s;
+                &:hover {
+                    color: var(--pink);
+                }
             }
         }
     }

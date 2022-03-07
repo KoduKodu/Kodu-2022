@@ -15,6 +15,10 @@
     text-align: center;
     text-transform: uppercase;
     vertical-align: baseline;
+    transition: all ease-in-out .3s;
+    &:hover {
+      background-color: var(--light-pink);
+    }
   }
 
 //section main header
@@ -39,6 +43,7 @@
   //pink arrow after link
   .arrow-after {
     position: relative;
+    transition: all ease-in-out .2s;
     &::after {
       position: relative;
       display: inline-block;
@@ -50,5 +55,12 @@
       background: url(images/pink-arrow.svg);
       background-size: contain;
       background-repeat: no-repeat;
+      transition: all ease-in-out .2s;
+    }
+    &:hover {
+      color: var(--pink);
+      &::after {
+        left: 14px;
+      }
     }
   }

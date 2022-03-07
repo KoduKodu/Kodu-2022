@@ -44,13 +44,13 @@
 	<!-- MAIN MENU  -->
 		<ul class="site-header__menu flex flex-ai-c">
 			<li class="site-header__menu__item">
-				<a href="" class="">co robię</a>
+				<a href="#about" class="">co robię</a>
 			</li>
 			<li class="site-header__menu__item">
-				<a href="" class="">portfolio</a>
+				<a href="#portfolio" class="">portfolio</a>
 			</li>
 			<li class="site-header__menu__item">
-				<a href="" class="">kontakt</a>
+				<a href="#contact" class="">kontakt</a>
 			</li>
 		</ul>
 	

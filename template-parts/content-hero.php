@@ -18,7 +18,7 @@
             dla Twojego <span>biznesu,
             produktu</span> lub <span>idei</span>.
         </p>
-        <a href="#">
+        <a href="#about">
             <button class="button">
                 poznajmy się
             </button>

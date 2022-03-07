@@ -9,7 +9,7 @@
 
 ?>
 <!-- about section -->
-<section class="about main-padding flex flex-jc-sb">
+<section class="about main-padding flex flex-jc-sb" id="about">
     <ul class="about__services flex">
         <li>
             <h4 class="about__services__header">strony internetowe</h4>
