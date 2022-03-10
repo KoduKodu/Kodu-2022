@@ -195,4 +195,22 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 remove_filter ('the_excerpt', 'wpautop');
 remove_filter ('the_content', 'wpautop');
 
+/**
+ * portfolio custom posts
+ */
+function portfolio_post_type()
+{
+	$args = array(
+		'labels' => array(
+			'name' => 'Portfolio',
+			'singular_name' => 'Project',
+		),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
+	);
+	register_post_type( 'portfolio', $args );
+}
+
+add_action( 'init', 'portfolio_post_type' );
 

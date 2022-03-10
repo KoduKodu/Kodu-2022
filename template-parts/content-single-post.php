@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying results in search pages
+ * Template part for displaying posts on main page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -19,8 +19,9 @@
                 <?php the_title(); ?>
             </h3>
             <p class="portfolio__single__about__desc flex">
-                <?php the_content('zobacz więcej'); ?>
+                <?php the_excerpt('zobacz więcej'); ?>
             </p>
+            <a class="more-link arrow-after" href="<?php the_permalink(); ?>">zobacz więcej</a>
         </div>
     </div>
 </li>

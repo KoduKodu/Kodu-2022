@@ -2,10 +2,14 @@
     margin-bottom: 200px;
     // hero section description
     &__description {
-        @include fontTitles(500, 3rem, var(--main-dark-text-color));
-        line-height: 3.8rem;
+        @include fontTitles(500, 3.8rem, var(--main-dark-text-color));
+        line-height: 4.2rem;
         white-space: pre-line;
         margin: 70px 0;
+        @include responsive(tablet){
+            font-size: 3rem;
+            line-height: 3.2rem;
+        }
         span {
             font-weight: 900;
         }
@@ -13,8 +17,11 @@
     // hero image animated gif
     &__image {
         img {
-            width: 500px;
+            width: 700px;
             margin-top: 400px;
+            @include responsive(tablet){
+                max-width: 460px;
+            }
         }
     }
 }

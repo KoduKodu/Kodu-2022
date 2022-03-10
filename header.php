@@ -44,13 +44,13 @@
 	<!-- MAIN MENU  -->
 		<ul class="site-header__menu flex flex-ai-c">
 			<li class="site-header__menu__item">
-				<a href="#about" class="">co robię</a>
+				<a href="<?php echo esc_url( home_url( '/#about' ) ); ?>" class="">co robię</a>
 			</li>
 			<li class="site-header__menu__item">
-				<a href="#portfolio" class="">portfolio</a>
+				<a href="<?php echo esc_url( home_url( '/#portfolio' ) ); ?>" class="">portfolio</a>
 			</li>
 			<li class="site-header__menu__item">
-				<a href="#contact" class="">kontakt</a>
+				<a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="">kontakt</a>
 			</li>
 		</ul>
 	

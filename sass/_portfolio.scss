@@ -1,4 +1,5 @@
 .portfolio {
+    margin: 50px 0;
     // list used to change order of even single project
     ul {
         list-style: none;
@@ -8,9 +9,9 @@
             .portfolio__single {
                 margin-top: 100px;
                 &__image {
-                    height: 390px;
-                    width: 380px;
-                    max-width: 380px;
+                    height: 410px;
+                    width: 440px;
+                    max-width: 440px;
                     background-position: center center!important;
                     background-size: cover!important;
                     background-repeat: no-repeat!important;
@@ -35,7 +36,7 @@
                     }
                     &__desc {
                         flex-direction: column;
-                        @include fontText(500, 1rem, var(--main-dark-text-color));
+                        @include fontText(500, 1.2rem, var(--main-dark-text-color));
                     }
                     // class from wordpress 'read more' link
                     .more-link {
