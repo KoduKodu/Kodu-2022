@@ -154,7 +154,6 @@ function kodu_2022_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'kodu_2022_scripts' );
 
-
 /**
  * Custom fonts.
  */
@@ -219,4 +218,3 @@ function portfolio_post_type()
 }
 
 add_action( 'init', 'portfolio_post_type' );
-
