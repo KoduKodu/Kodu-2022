@@ -591,6 +591,18 @@ img {
 	background-color: var(--light-pink);
 }
 
+.contact__second__form .wpcf7-not-valid-tip {
+	font-size: .8rem;
+}
+
+.contact__second__form .wpcf7-response-output {
+	border: hidden !important;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	font-size: 0.8rem;
+	color: var(--pink);
+}
+
 footer {
 	background: var(--dark-gray);
 }

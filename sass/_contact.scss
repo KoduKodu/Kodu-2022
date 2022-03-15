@@ -96,6 +96,15 @@
                   background-color: var(--light-pink);
                 }
             }
+            // validation tips and response messages
+            .wpcf7-not-valid-tip {
+                font-size: .8rem;
+            }
+
+            .wpcf7-response-output {
+                border: hidden!important;
+                @include fontText(400, .8rem, var(--pink));
+            }
         }
     }
 }

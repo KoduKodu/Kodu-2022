@@ -134,12 +134,17 @@ function kodu_2022_widgets_init() {
 }
 add_action( 'widgets_init', 'kodu_2022_widgets_init' );
 
+
 /**
  * Enqueue scripts and styles.
  */
 function kodu_2022_scripts() {
 	wp_enqueue_style( 'kodu-2022-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'kodu-2022-style', 'rtl', 'replace' );
+
+	wp_enqueue_script('clipboard', get_template_directory_uri() . '/js/clipboard.js');
+
+	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.js');
 
 	wp_enqueue_script( 'kodu-2022-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -148,6 +153,7 @@ function kodu_2022_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'kodu_2022_scripts' );
+
 
 /**
  * Custom fonts.
