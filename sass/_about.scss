@@ -1,0 +1,42 @@
+.about {
+    // services styling
+    margin-bottom: 100px;
+    &__services {
+        li {
+            margin-top: 50px;
+            padding-right: 50px;
+        }
+        &__header {
+            position: relative;
+            text-decoration: none;
+            @include fontTitles(500, 1rem, var(--main-dark-text-color));
+            &::after{
+                position: absolute;
+                content: '';
+                height: 1px;
+                bottom: -4px;
+                left: 0;
+                right: 0;
+                width: 130px;
+                background: var(--main-dark-text-color);
+            }
+        }
+        &__description {
+            @include fontText(500, .8rem, var(--main-dark-text-color));
+            margin-top: 16px;
+        }
+    }
+    // about info
+    &__info {
+        max-width: 50%;
+        &__description {
+            @include fontText(400, 1.2rem, var(--main-dark-text-color));
+            margin-top: 10px;
+        }
+        a {
+            @include fontText(400, .8rem, var(--main-dark-text-color));
+            justify-content: end;
+            margin-top: 20px;
+        }
+    }
+}

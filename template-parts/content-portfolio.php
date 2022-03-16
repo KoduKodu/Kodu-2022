@@ -1,14 +1,15 @@
 <?php
 /**
- * The template for displaying archive pages
+ * Template part for displaying page content in front-page.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package kodu-2022
  */
 
-get_header();
 ?>
+
+<!-- portoflio section -->
 
 <section class="portfolio main-padding" id="portfolio">
     <h2 class="section-header">portfolio</h2>
@@ -29,6 +30,3 @@ get_header();
         <?php endforeach; ?>
     </ul>
 </section>
-
-<?php
-get_footer();

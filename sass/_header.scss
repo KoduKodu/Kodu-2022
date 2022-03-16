@@ -1,0 +1,25 @@
+.site-header {
+    margin: 20px 0 20px 0;
+    // left side of header - logo
+    &__logo {
+        &__title {
+            @include fontTitles(400, 1.8rem, var(--main-dark-text-color));
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+    // right side of header - menu
+    &__menu {
+        &__item {
+            margin-left: 117px;
+            a {
+                @include fontText(300, 1rem, var(--main-dark-text-color));
+                transition: all ease-in-out .1s;
+                &:hover {
+                    color: var(--pink);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+    .single__project {
+        margin-top: 100px;
+        &__info {
+
+        }
+        p {
+            width: 600px;
+            @include fontTitles(500, 1.6rem, var(--main-dark-text-color));
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            }
+            img {
+                margin: 40px 0;
+                width: auto;
+            }
+            video {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+    }

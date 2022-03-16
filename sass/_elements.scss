@@ -1,0 +1,66 @@
+// pink rounded button
+.button {
+    @include fontText(400, 1rem, var(--white));
+    background-color: var(--pink);
+    border-radius: 65px;
+    border-style: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 44px;
+    width: 200px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    transition: all ease-in-out .3s;
+    &:hover {
+      background-color: var(--light-pink);
+    }
+  }
+
+//section main header
+  .section-header {
+      @include fontTitles(500, 2.2rem, var(--main-dark-text-color));
+      position: relative;
+      z-index: 9;
+      &::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        height: 18px;
+        top: 32px;
+        left: 40px;
+        width: 148px;
+        background: url(images/section-header-pink-underline.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+  }
+
+  //pink arrow after link
+  .arrow-after {
+    position: relative;
+    transition: all ease-in-out .2s;
+    &::after {
+      position: relative;
+      display: inline-block;
+      content: '';
+      height: 12px;
+      width: 32px;
+      top: 5px;
+      left: 10px;
+      background: url(images/pink-arrow.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all ease-in-out .2s;
+    }
+    &:hover {
+      color: var(--pink);
+      &::after {
+        left: 14px;
+      }
+    }
+  }

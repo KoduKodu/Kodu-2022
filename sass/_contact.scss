@@ -1,0 +1,111 @@
+.contact {
+    margin: 120px 0 120px 0;
+    &__first {
+        &__image {
+            margin-top: 90px;
+            img {
+                height: 600px;
+                max-height: 600px;
+                @include responsive(tablet){
+                    max-height: 420px;
+                }
+            }
+        }
+        &__info {
+            width: 50%;
+            margin-left: 60px;
+            &__text {
+                @include fontText(400, 1.2rem, var(--main-dark-text-color));
+                margin-top: 10px;
+                .arrow-after {
+                    &::after {
+                        top: 0px;
+                    }
+                }
+
+            }
+            &__email {
+                @include fontTitles(500, 2rem, var(--main-dark-text-color));
+                line-height: 2rem;
+                margin-top: 40px;
+            }
+            img {
+                height: 80px;
+                margin: 20px 0 0 200px;
+            }
+        }
+    }
+    &__second {
+        margin-top: 100px;
+        &__form {
+            &__header {
+                @include fontTitles(500, 1.6rem, var(--main-dark-text-color));
+                margin-bottom: 20px;
+            }
+            // styles for contact form 7 plugin
+            p {
+                @include fontText(400, 1.2rem, var(--main-dark-text-color));
+                margin-top: 10px;
+            }
+            p:last-child {
+                display: flex;
+                justify-content: center;
+                border: 2px solid green;
+            }
+            input[type="text"],
+            input[type="email"] {
+                border: 0;
+                border-bottom: 2px solid var(--dark-gray);
+                width: 400px;
+                height: 32px;
+                @include fontText(400, 1.2rem, var(--main-dark-text-color));
+                // margin-top: 10px;
+                &:focus {
+                    outline: 0;
+                    border-bottom: 2px solid var(--pink);
+                }
+            }
+            textarea {
+                border: 2px solid var(--dark-gray);
+                width: 400px;
+                height: 200px;
+                margin-bottom: 40px;
+                @include fontText(400, 1.2rem, var(--main-dark-text-color));
+                &:focus {
+                    outline: 0;
+                    border: 2px solid var(--pink);
+                }
+            }
+            input[type="submit"] {
+                @include fontText(400, 1rem, var(--white));
+                background-color: var(--pink);
+                border-radius: 65px;
+                border-style: none;
+                cursor: pointer;
+                display: inline-block;
+                height: 44px;
+                width: 200px;
+                list-style: none;
+                margin: 0;
+                outline: none;
+                position: relative;
+                text-align: center;
+                text-transform: uppercase;
+                vertical-align: baseline;
+                transition: all ease-in-out .3s;
+                &:hover {
+                  background-color: var(--light-pink);
+                }
+            }
+            // validation tips and response messages
+            .wpcf7-not-valid-tip {
+                font-size: .8rem;
+            }
+
+            .wpcf7-response-output {
+                border: hidden!important;
+                @include fontText(400, .8rem, var(--pink));
+            }
+        }
+    }
+}

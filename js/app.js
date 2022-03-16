@@ -1,0 +1,3 @@
+new ClipboardJS('.mail-tippy');
+
+

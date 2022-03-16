@@ -134,12 +134,17 @@ function kodu_2022_widgets_init() {
 }
 add_action( 'widgets_init', 'kodu_2022_widgets_init' );
 
+
 /**
  * Enqueue scripts and styles.
  */
 function kodu_2022_scripts() {
 	wp_enqueue_style( 'kodu-2022-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'kodu-2022-style', 'rtl', 'replace' );
+
+	wp_enqueue_script('clipboard', get_template_directory_uri() . '/js/clipboard.js');
+
+	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.js');
 
 	wp_enqueue_script( 'kodu-2022-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -155,7 +160,7 @@ add_action( 'wp_enqueue_scripts', 'kodu_2022_scripts' );
 function enqueue_custom_fonts() {
 	if(!is_admin()) {
 		wp_register_style('noto_sans', 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-		wp_register_style('raleway', 'https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;900&display=swap');
+		wp_register_style('raleway', 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap');
 		wp_enqueue_style('noto_sans');
 		wp_enqueue_style('raleway');
 	}
@@ -189,4 +194,27 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+/**
+ * removes extra p tag in excerpt
+ */
+remove_filter ('the_excerpt', 'wpautop');
+remove_filter ('the_content', 'wpautop');
 
+/**
+ * portfolio custom posts
+ */
+function portfolio_post_type()
+{
+	$args = array(
+		'labels' => array(
+			'name' => 'Portfolio',
+			'singular_name' => 'Project',
+		),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
+	);
+	register_post_type( 'portfolio', $args );
+}
+
+add_action( 'init', 'portfolio_post_type' );

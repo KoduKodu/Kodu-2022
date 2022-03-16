@@ -1,0 +1,84 @@
+.portfolio {
+    margin: 50px 0;
+    // list used to change order of even single project
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            .portfolio__single {
+                margin-top: 100px;
+                &__image {
+                    height: 410px;
+                    width: 440px;
+                    max-width: 440px;
+                    background-position: center center!important;
+                    background-size: cover!important;
+                    background-repeat: no-repeat!important;
+                    order: 1;
+                    image-rendering: -webkit-optimize-contrast;
+                    transition: all ease-in-out .3s;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(90%);
+                    &:hover{
+                    filter: grayscale(0%);
+
+                    }
+                }
+                &__about {
+                    flex-direction: column;
+                    margin: 60px 0 0 40px;
+                    padding: 0 140px 0 0;
+                    max-width: 44%; 
+                    order: 2;
+                    &__title {
+                        @include fontTitles(500, 1.8rem, var(--main-dark-text-color));
+                    }
+                    &__desc {
+                        flex-direction: column;
+                        @include fontText(500, 1.2rem, var(--main-dark-text-color));
+                    }
+                    // class from wordpress 'read more' link
+                    .more-link {
+                        @include fontText(400, .8rem, var(--main-dark-text-color));
+                        position: relative;
+                        margin-top: 20px;
+                        
+                        &::after {
+                            position: relative;
+                            display: inline-block;
+                            content: '';
+                            height: 12px;
+                            width: 32px;
+                            top: 3px;
+                            left: 10px;
+                            background: url(images/pink-arrow.svg);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            transition: all ease-in-out .2s;
+                        }
+                        &:hover {
+                            color: var(--pink);
+                            &::after {
+                              left: 14px;
+                            }
+                          }
+                    }
+                }
+            }
+        }
+        li:nth-child(even) {
+            .portfolio__single {
+                justify-content: flex-end;
+                &__image {
+                    order: 2;
+                }
+                &__about {
+                    margin: 60px 40px 0 0;
+                    padding: 0 0 0 140px; 
+                    order: 1;
+                }
+            }
+        }
+    }
+}
