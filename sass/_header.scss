@@ -23,3 +23,18 @@
         }
     }
 }
+
+// MOBILE
+
+@include responsive(phone) {
+.site-header {
+    &__logo {
+        &__title {
+            font-size: 1.4rem;
+        }
+    }
+    &__menu {
+        display: none;
+    }
+}
+}

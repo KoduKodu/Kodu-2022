@@ -1,26 +1,45 @@
-.hero{
+.hero {
     margin-bottom: 200px;
     // hero section description
-    &__description {
-        @include fontTitles(500, 3.8rem, var(--main-dark-text-color));
-        line-height: 4.2rem;
-        white-space: pre-line;
-        margin: 70px 0;
-        @include responsive(tablet){
-            font-size: 3rem;
-            line-height: 3.2rem;
+    &__info {
+        &__desc {
+            @include fontTitles(500, 3.8rem, var(--main-dark-text-color));
+            line-height: 4.2rem;
+            white-space: pre-line;
+            margin: 70px 0;
+            @include responsive(tablet) {
+                font-size: 3rem;
+                line-height: 3.2rem;
+            }
+            span {
+                font-weight: 900;
+            }
         }
-        span {
-            font-weight: 900;
+        // hero image animated gif
+        &__image {
+            img {
+                width: 700px;
+                margin-top: 400px;
+                @include responsive(tablet) {
+                    max-width: 460px;
+                }
+            }
         }
     }
-    // hero image animated gif
-    &__image {
-        img {
-            width: 700px;
-            margin-top: 400px;
-            @include responsive(tablet){
-                max-width: 460px;
+}
+
+// MOBILE
+
+@include responsive(phone) {
+    .hero {
+        flex-direction: column;
+        margin-bottom: 100px;
+        &__info {
+            margin-bottom: 30px;
+            &__desc {
+                font-size: 2.2rem;
+                line-height: 2.6rem;
+                margin: 10px 0;
             }
         }
     }

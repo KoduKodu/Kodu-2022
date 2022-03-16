@@ -11,8 +11,8 @@
 <!-- hero section -->
 <section class="hero main-padding flex flex-jc-sb">
     <!-- hero description -->
-    <div class="hero__descritpion">
-        <p class="hero__description">
+    <div class="hero__info">
+        <p class="hero__info__desc">
             Tworzę miejsca
             w internecie
             dla Twojego <span>biznesu,

@@ -112,3 +112,34 @@
         }
     }
 }
+
+// MOBILE
+
+@include responsive(phone) {
+    .contact {
+        &__first {
+            flex-direction: column;
+            &__image {
+                order: 2;
+            }
+            &__info {
+                order: 1;
+                width: 100%;
+                margin-left: 0px;
+            }
+
+        }
+        &__second {
+            &__form {
+                // styles for contact form 7 plugin
+                input[type="text"],
+                input[type="email"] {
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }           
+        }
+    }
+}

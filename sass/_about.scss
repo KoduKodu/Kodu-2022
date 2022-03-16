@@ -2,6 +2,7 @@
     // services styling
     margin-bottom: 100px;
     &__services {
+        order: 1;
         li {
             margin-top: 50px;
             padding-right: 50px;
@@ -29,6 +30,7 @@
     // about info
     &__info {
         max-width: 50%;
+        order: 2;
         &__description {
             @include fontText(400, 1.2rem, var(--main-dark-text-color));
             margin-top: 10px;
@@ -37,6 +39,18 @@
             @include fontText(400, .8rem, var(--main-dark-text-color));
             justify-content: end;
             margin-top: 20px;
+        }
+    }
+}
+@include responsive(phone) {
+    .about {
+        flex-direction: column;
+        &__services {
+            order: 2;
+        }
+        &__info {
+            order: 1;
+            max-width: 100%;
         }
     }
 }
