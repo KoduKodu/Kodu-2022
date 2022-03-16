@@ -161,6 +161,7 @@ img {
 	background-color: var(--pink);
 	border-radius: 65px;
 	border-style: none;
+	transform: translate(0, 2px);
 	cursor: pointer;
 	display: inline-block;
 	height: 44px;
@@ -172,11 +173,12 @@ img {
 	text-align: center;
 	text-transform: uppercase;
 	vertical-align: baseline;
-	transition: all ease-in-out .3s;
+	transition: all ease-in-out .2s;
 }
 
 .button:hover {
-	background-color: var(--light-pink);
+	transform: translate(0, 0);
+	box-shadow: rgba(0, 0, 0, 0.21) 0px 14px 28px, rgba(0, 0, 0, 0.2) 0px 10px 10px;
 }
 
 .section-header {
@@ -499,6 +501,7 @@ img {
 	color: var(--main-dark-text-color);
 	line-height: 2rem;
 	margin-top: 40px;
+	cursor: pointer;
 }
 
 .contact__first__info img {
@@ -574,6 +577,7 @@ img {
 	background-color: var(--pink);
 	border-radius: 65px;
 	border-style: none;
+	transform: translate(0, 2px);
 	cursor: pointer;
 	display: inline-block;
 	height: 44px;
@@ -589,7 +593,8 @@ img {
 }
 
 .contact__second__form input[type="submit"]:hover {
-	background-color: var(--light-pink);
+	transform: translate(0, 0);
+	box-shadow: rgba(0, 0, 0, 0.21) 0px 14px 28px, rgba(0, 0, 0, 0.2) 0px 10px 10px;
 }
 
 .contact__second__form .wpcf7-not-valid-tip {
@@ -663,12 +668,8 @@ footer .footer__info {
 	margin-top: 50px;
 }
 
-.portfolio__single__gallery__desktop__extend {
-	margin: 40px 0;
-}
-
-.portfolio__single__gallery__mobile {
-	width: 260px;
+.portfolio__single__gallery__desktop, .portfolio__single__gallery__desktop__extend, .portfolio__single__gallery__mobile {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

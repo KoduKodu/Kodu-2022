@@ -23,9 +23,11 @@
                 Chcesz o coś zapytać? Użyj formularza lub napisz maila, a jeśli wiesz dokładnie czego potrzebujesz i chcesz uzyskać wycenę poświęć troche czasu i
                 <a class="arrow-after" href="https://kodukodu.com/formularz/">wypełnij brief</a>
             </p>
-            <p class="contact__first__info__email mail--tippy" data-clipboard-text="kontakt@kodukodu.com">
+            <div class="contact__first__info__email" >
+                <p id="mail--tippy" data-clipboard-text="kontakt@kodukodu.com">
                 kontakt@<br>kodukodu.com
-            </p>
+                </p>
+            </div>
             <img src="<?php echo get_template_directory_uri(); ?>/images/hand-icon.png" alt="">
         </div>
     </div>

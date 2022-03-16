@@ -144,8 +144,13 @@ function kodu_2022_scripts() {
 
 	wp_enqueue_script('clipboard', get_template_directory_uri() . '/js/clipboard.js');
 
-	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.js');
+	wp_enqueue_script('popper',
+	'https://unpkg.com/@popperjs/core@2');
+	wp_enqueue_script('tippy',
+	'https://unpkg.com/tippy.js@6');
 
+	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.js', [], 1, true);
+	
 	wp_enqueue_script( 'kodu-2022-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

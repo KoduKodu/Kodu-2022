@@ -4,6 +4,7 @@
     background-color: var(--pink);
     border-radius: 65px;
     border-style: none;
+    transform: translate(0, 2px);
     cursor: pointer;
     display: inline-block;
     height: 44px;
@@ -15,9 +16,10 @@
     text-align: center;
     text-transform: uppercase;
     vertical-align: baseline;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .2s;
     &:hover {
-      background-color: var(--light-pink);
+      transform: translate(0, 0);
+      box-shadow: rgba(0, 0, 0, 0.21) 0px 14px 28px, rgba(0, 0, 0, 0.2) 0px 10px 10px;
     }
   }
 
